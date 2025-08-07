@@ -19,6 +19,13 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<"projects">;
 
 const project = Astro.props;
+
+
+// ⛔ Instant redirect if needed
+if (project.data.reroute && project.data.demoURL) {
+  return Astro.redirect(project.data.demoURL);
+}
+
 const { Content } = await project.render();
 ---
 

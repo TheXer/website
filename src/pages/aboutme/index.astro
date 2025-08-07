@@ -1,0 +1,53 @@
+---
+import Container from "@components/Container.astro";
+import PageLayout from "@layouts/PageLayout.astro";
+import Link from "@components/Link.astro";
+import { SITE, HOME, SOCIALS } from "@consts";
+
+---
+
+<PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
+  <Container>
+      <h4 class="animate font-semibold text-black dark:text-white">
+      Něco o mně <span class="text-xl">😎</span>
+    </h4>
+    <div class="space-y-16">
+      <section>
+        <article class="space-y-4">
+          <p class="animate">
+           Napsat něco o sobě je možná jedna z nejtěžších věcí, co člověk řeší — a já nejsem výjimka. 
+            Řekl bych, že jsem typ člověka, co rád zkouší všechno… a zároveň nic. Takže vzhledem k tomu, že veškeré moje koníčky mají kratší trvanlivost než mléko z Alberta, je náročné 
+            popsat co mě vlastně baví a co mám za koníčky.<br> <i>Ale když už jsme u toho, necelé tři měsíce zapálení jsem měl pro kombuchu. Aspoň něco...?</i>
+          </p>
+          <p class="animate">
+            Z těch stálejších věcí ale určitě můžu vypíchnout programování a obecně IT obor. Drbu se s 
+            automatickými testy, vytvářím frameworky a balíčky pro testování, hlídám CI/CD a mimo testování mě dost zajímá backend vývoj. 
+            Co dalšího? Uvidíme. Tenhle blog je i moje poznávačka sebe sama. 😉
+          </p>
+
+          <p class="animate">
+            Mno, co studuju? Jsem z Brna, ale studuju VŠB-TUO. A jo, lidi na to občas divně koukají – nevím proč. Nepříliš překvapivě 
+            studuji informatiku a docela rád bych získal bakaláře, ať se můžu všem na smlouvách podepisovat Bc. Sokola. 
+          </p>
+          <p class="animate">
+            Jsem těžce nedoslýchavý kluk, co ovládá znakový jazyk a 
+            často se pohybuje mezi n/Neslyšícími. V podstatě to znamená, že se snažím normálně komunikovat s lidmi, ale občas to nejde a někdy mě to začne i otravovat.
+            Ale to je život, ne?
+          </p>
+          <p class="animate">
+            Jsem člověk co strašně rád přemýšlí o všem, zkoumá věci, zkouší je a zjišťuje zajímavosti v okolí. Zároveň jsem typ člověka 
+            co si ověřuje informace, diskutuje o náročných tématech s ostatními, nebojí se konstruktivní zpětné vazby a zjišťuje další věci o sobě. Sebereflexe mi 
+            není cizí, vidím ji rád jak u sebe, tak i u ostatních lidí. 
+          </p>
+
+          <p class="animate">
+            Předešlé odstavce by byly o pozitivních věcech. Z těch negativních určitě vypíchnu nekonečnou prokrastinaci, lenost cokoliv dotáhnout do konce a někdy přílišná upřímnost. To jsou věci, 
+            které mě v minulosti pěkně popálily a určitě se z nich popálím znova. Každej jsme tak trochu sadomacochista, no. 
+          </p>
+          <p class="animate">
+            Mno, suma sumárum, řekl bych, že jsem docela chaotickej pragmatik. Někdy v tom plavu, ale nakonec to je vždy v pohodě. 
+            </p>
+        </article>
+      </section>
+  </Container>
+</PageLayout>

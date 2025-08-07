@@ -6,7 +6,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function formatDate(date: Date) {
-  return Intl.DateTimeFormat("en-US", {
+  return Intl.DateTimeFormat("cs-cz", {
     month: "short",
     day: "2-digit",
     year: "numeric"
@@ -21,7 +21,7 @@ export function readingTime(html: string) {
 }
 
 export function dateRange(startDate: Date, endDate?: Date | string): string {
-  const startMonth = startDate.toLocaleString("default", { month: "short" });
+  const startMonth = startDate.toLocaleString("cs-cz", { month: "long" });
   const startYear = startDate.getFullYear().toString();
   let endMonth;
   let endYear;
@@ -31,10 +31,10 @@ export function dateRange(startDate: Date, endDate?: Date | string): string {
       endMonth = "";
       endYear = endDate;
     } else {
-      endMonth = endDate.toLocaleString("default", { month: "short" });
+      endMonth = endDate.toLocaleString("cs-cz", { month: "long" });
       endYear = endDate.getFullYear().toString();
     }
   }
 
-  return `${startMonth}${startYear} - ${endMonth}${endYear}`;
+  return `${startMonth} ${startYear} - ${endMonth} ${endYear}`;
 }
